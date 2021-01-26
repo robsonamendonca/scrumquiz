@@ -1,0 +1,43 @@
+{
+    "bg": "https://www.claseejecutiva.uc.cl/wp-content/uploads/2020/09/Estrategia-agil-w-s_1499825396-min-thegem-blog-timeline-large.jpg",
+    "title": "Quiz SCRUM da Alura",
+    "description": "Teste os seus conhecimentos sobre SCRUM e vamos ver quantos pontos vai ganhar!",
+    "questions": [
+      {
+        "image": "https://media1.giphy.com/media/xT1XGOGdyDrL2BTfxK/200w.webp?cid=ecf05e47vlbs850wdscw11kinfrburpm0dudc5g2t5az7h5c&rid=200w.webp",
+        "title": "O que é SCRUM?",
+        "description": "Essa é pra introdução ao assunto!",
+        "answer": 0,
+        "alternatives": [
+          "É um framework dentro do qual você pode empregar vários processos ou técnicas.",
+          "É um processo ou uma técnica para construir produtos.",
+          "É um framework dentro do qual pessoas não podem tratar e resolver problemas complexos e adaptativos",
+          "É um unico meio muito pertinente e relevante para fazer software com agilidade"
+        ]
+      },
+      {
+        "image": "https://media0.giphy.com/media/l3V0hZMQeW7iA4dWw/200w.webp?cid=ecf05e47gxx2oyfzdneha51btn09xeu7j979mm17ik7i8xpk&rid=200w.webp",
+        "title": "Quais papéis o Time Scrum é composto?",
+        "description": "Mais um pouco de conteúdo...",
+        "answer": 0,
+        "alternatives": [
+           "Product Owner, Scrum Master e “Equipe” de Desenvolvimento",
+           "Project Manager, Scrum Master e “Equipe” de Desenvolvimento"
+        ]
+      }
+    ],
+    "external": [
+      ""
+    ],
+    "theme": {
+      "colors": {
+        "primary": "#ba68c8",
+        "secondary": "#880e4f",
+        "mainBg": "#171B35",
+        "contrastText": "#FFFFFF",
+        "wrong": "#FF5722",
+        "success": "#4CAF50"
+      },
+      "borderRadius": "4px"
+    }
+  }
