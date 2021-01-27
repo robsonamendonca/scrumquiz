@@ -1,12 +1,10 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: ${({ theme }) => {
-    return theme.colors.mainBg;
-  }};
+  background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: 4px;
   overflow: hidden;
   h1, h2, h3 {
@@ -20,6 +18,30 @@ const Widget = styled.div`
     font-weight: 400;
     line-height: 1;
   }
+  input {
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    letter-spacing: 0.15px;
+
+  }
+  button{    
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+  }
+
 `;
 
 Widget.Header = styled.header`
@@ -48,4 +70,4 @@ Widget.Content = styled.div`
   }
 `;
 
-export default Widget; 
+export default Widget;
