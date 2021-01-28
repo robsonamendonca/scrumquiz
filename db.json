@@ -24,7 +24,40 @@
            "Product Owner, Scrum Master e “Equipe” de Desenvolvimento",
            "Project Manager, Scrum Master e “Equipe” de Desenvolvimento"
         ]
-      }
+      },
+      {
+        "image": "https://media4.giphy.com/media/XZTq0807JMyKmTRFDO/200w.webp?cid=ecf05e47fylkapetdsur9acz7upwivkn6w2u39e01kobfunl&rid=200w.webp",
+        "title": "O que  Product Owner (Dono do Produto) faz?",
+        "description": "Mais um pouco de conteúdo...",
+        "answer": 1,
+        "alternatives": [
+           "Responsável pela execução de todas as regras",
+           "Representa os interesses do cliente no projeto e, em alguns casos, é o próprio cliente",
+           "Responsável por desenvolver o projeto"
+        ]
+      },
+      {
+        "image": "https://media4.giphy.com/media/11K3vjrew7IFGw/200w.webp?cid=ecf05e47xa6dnq6tk2mnldnlx40lie65kqdpsgy5u22cl6yr&rid=200w.webp",
+        "title": "O que  Scrum Master (Mestre Scrum) faz?",
+        "description": "Mais um pouco de conteúdo...",
+        "answer": 0,
+        "alternatives": [
+           "Responsável pela execução de todas as regras",
+           "Representa os interesses do cliente no projeto e, em alguns casos, é o próprio cliente",
+           "Responsável por desenvolver o projeto"
+        ]
+      } ,
+      {
+        "image": "https://media3.giphy.com/media/PbFp1FmxteXsc/giphy.webp?cid=ecf05e47svo0o7lcl45syovm41g8z69l0nlmk5j25r94rvr7&rid=giphy.webp",
+        "title": "O que  “Equipe” de Desenvolvimento faz?",
+        "description": "Mais um pouco de conteúdo...",
+        "answer": 2,
+        "alternatives": [
+           "Responsável pela execução de todas as regras",
+           "Representa os interesses do cliente no projeto e, em alguns casos, é o próprio cliente",
+           "Responsável por desenvolver o projeto"
+        ]
+      }                   
     ],
     "external": [
       ""
