@@ -4,7 +4,7 @@
     "description": "Teste os seus conhecimentos sobre SCRUM e vamos ver seus resultados!",
     "questions": [
       {
-        "image": "https://media1.giphy.com/media/xT1XGOGdyDrL2BTfxK/200w.webp?cid=ecf05e47vlbs850wdscw11kinfrburpm0dudc5g2t5az7h5c&rid=200w.webp",
+        "image": "https://marionettestudio.com/wp-content/uploads/2016/08/project-noise-level.gif",
         "title": "O que é SCRUM?",
         "description": "Essa é pra introdução ao assunto!",
         "answer": 0,
@@ -16,7 +16,7 @@
         ]
       },
       {
-        "image": "https://media0.giphy.com/media/l3V0hZMQeW7iA4dWw/200w.webp?cid=ecf05e47gxx2oyfzdneha51btn09xeu7j979mm17ik7i8xpk&rid=200w.webp",
+        "image": "https://i.pinimg.com/originals/12/03/4f/12034f0ed29649e0b274710ab6056179.gif",
         "title": "Quais papéis o Time Scrum é composto?",
         "description": "Mais um pouco de conteúdo...",
         "answer": 0,
@@ -26,7 +26,7 @@
         ]
       },
       {
-        "image": "https://media4.giphy.com/media/XZTq0807JMyKmTRFDO/200w.webp?cid=ecf05e47fylkapetdsur9acz7upwivkn6w2u39e01kobfunl&rid=200w.webp",
+        "image": "https://crehana-blog.s3.amazonaws.com/media/filer_public/39/4f/394fb6b7-8217-4093-b490-7449c78df504/scrum.gif",
         "title": "O que  Product Owner (Dono do Produto) faz?",
         "description": "Mais um pouco de conteúdo...",
         "answer": 1,
@@ -37,7 +37,7 @@
         ]
       },
       {
-        "image": "https://media4.giphy.com/media/11K3vjrew7IFGw/200w.webp?cid=ecf05e47xa6dnq6tk2mnldnlx40lie65kqdpsgy5u22cl6yr&rid=200w.webp",
+        "image": "https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://spread.com.br/wp-content/uploads/2020/06/anima-desenvolvimento-agil.gif",
         "title": "O que  Scrum Master (Mestre Scrum) faz?",
         "description": "Mais um pouco de conteúdo...",
         "answer": 0,
@@ -48,7 +48,7 @@
         ]
       } ,
       {
-        "image": "https://media3.giphy.com/media/PbFp1FmxteXsc/giphy.webp?cid=ecf05e47svo0o7lcl45syovm41g8z69l0nlmk5j25r94rvr7&rid=giphy.webp",
+        "image": "https://i.imgur.com/K5qTBMn.gif",
         "title": "O que  “Equipe” de Desenvolvimento faz?",
         "description": "Mais um pouco de conteúdo...",
         "answer": 2,
@@ -60,7 +60,9 @@
       }                   
     ],
     "external": [
-      ""
+      "https://breaking-bad-quiz.eliasnepo.vercel.app/",
+      "https://aluraquiz-css.omariosouto.vercel.app/",
+      "https://aluraquiz-marvel.omariosouto.vercel.app/"
     ],
     "theme": {
       "colors": {

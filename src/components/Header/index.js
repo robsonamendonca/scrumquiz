@@ -27,8 +27,11 @@ export default function Header() {
         <meta property="og:description" content="Orgulhosamente criado durante a Imersão React da Alura." />
         <meta property="og:site_name" content="Quiz - SCRUM - Alura" />
 
-        <link id="favicon" rel="shortcut icon" href="/favicon.png" type="image/png" />
-        <link rel="apple-touch-icon" sizes="194x194" href="/favicon.png" type="image/png" />
+        <link id="favicon" rel="shortcut icon" href="http://hdev.com.br//img/scrumquiz.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="194x194" href="http://hdev.com.br//img/scrumquiz.png" type="image/png" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
 
       </Head>
     </div>

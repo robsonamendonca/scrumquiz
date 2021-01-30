@@ -1,74 +1,31 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/no-unresolved */
-/* eslint-disable linebreak-style */
-/* eslint-disable no-undef */
+/* eslint-disable import/extensions */
+/* eslint-disable eol-last */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
+/* eslint-disable import/no-unresolved */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { useRouter } from 'next/router';
+import { Lottie } from '@crello/react-lottie';
+// import db from '../../../db.json';
+import Widget from '../../components/Widget';
+import QuizLogo from '../../components/QuizLogo';
+import QuizBackground from '../../components/QuizBackground';
+import QuizContainer from '../../components/QuizContainer';
+import AlternativesForm from '../../components/AlternativesForm';
+import Button from '../../components/Button';
+import BackLinkArrow from '../../components/BackLinkArrow';
 
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import AlternativesForm from '../src/components/AlternativesForm';
-import Button from '../src/components/Button';
-import BackLinkArrow from '../src/components/BackLinkArrow';
-
-function TitlePlayer() {
-  const router = useRouter();
-  return (
-    <p>
-      Muito bem!
-      { router.query.name }
-    </p>
-  );
-}
-
-function LoadingWidget() {
-  return (
-    <Widget>
-      <Widget.Header>
-        Carregando...
-      </Widget.Header>
-
-      <Widget.Content>
-        {/* [Desafio do Loading]  */}
-        <img
-          alt="Carregando..."
-          style={{
-            width: '100%',
-            height: '150px',
-            objectFit: 'cover',
-          }}
-          src="https://gifmania.com.br/wp-content/uploads/2020/05/gif-carregando-loading.gif"
-        />
-      </Widget.Content>
-    </Widget>
-  );
-}
+import loadingAnimation from './animations/loading.json';
 
 function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
-        <BackLinkArrow href="/" />
-        <TitlePlayer />
+        Tela de Resultado:
       </Widget.Header>
 
       <Widget.Content>
-        <img
-          alt="Resultado"
-          style={{
-            width: '100%',
-            height: '150px',
-            objectFit: 'cover',
-          }}
-          src="https://www.go2group.com/wp-content/uploads/2019/09/Meme-1.gif"
-        />
-
         <p>
           Você acertou
           {' '}
@@ -81,7 +38,7 @@ function ResultWidget({ results }) {
           }, 0)} */}
           {results.filter((x) => x).length}
           {' '}
-          perguntas!
+          perguntas
         </p>
         <ul>
           {results.map((result, index) => (
@@ -96,7 +53,25 @@ function ResultWidget({ results }) {
             </li>
           ))}
         </ul>
+      </Widget.Content>
+    </Widget>
+  );
+}
 
+function LoadingWidget() {
+  return (
+    <Widget>
+      <Widget.Header>
+        Carregando...
+      </Widget.Header>
+
+      <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
+        <Lottie
+          width="200px"
+          height="200px"
+          className="lottie-container basic"
+          config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
+        />
       </Widget.Content>
     </Widget>
   );
@@ -196,13 +171,14 @@ const screenStates = {
   LOADING: 'LOADING',
   RESULT: 'RESULT',
 };
-export default function QuizPage() {
+export default function QuizPage({ externalQuestions, externalBg }) {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults] = React.useState([]);
-  const totalQuestions = db.questions.length;
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
   const questionIndex = currentQuestion;
-  const question = db.questions[questionIndex];
+  const question = externalQuestions[questionIndex];
+  const totalQuestions = externalQuestions.length;
+  const bg = externalBg;
 
   function addResult(result) {
     // results.push(result);
@@ -220,7 +196,7 @@ export default function QuizPage() {
     // fetch() ...
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1 * 1000);
+    }, 1 * 2000);
   // nasce === didMount
   }, []);
 
@@ -234,7 +210,7 @@ export default function QuizPage() {
   }
 
   return (
-    <QuizBackground backgroundImage={db.bg}>
+    <QuizBackground backgroundImage={bg}>
       <QuizContainer>
         <QuizLogo />
         {screenState === screenStates.QUIZ && (
