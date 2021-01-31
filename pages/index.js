@@ -1,4 +1,8 @@
+/* eslint-disable linebreak-style */
+// eslint-disable-next-line linebreak-style
+// eslint-disable-next-line linebreak-style
 /* eslint-disable react/jsx-filename-extension */
+// eslint-disable-next-line linebreak-style
 /* eslint-disable import/no-unresolved */
 import React from 'react';
 import styled from 'styled-components';
@@ -108,6 +112,40 @@ export default function Home() {
                     <Widget.Topic
                       as={Link}
                       href={`/quiz/${projectName}___${githubUser}`}
+                    >
+                      {`${githubUser}/${projectName}`}
+                    </Widget.Topic>
+                  </li>
+                );
+              })}
+            </ul>
+          </Widget.Content>
+        </Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+        >
+          <Widget.Content>
+            <h1>Quizes da Galera Local</h1>
+
+            <ul>
+              {db.internal.map((linkInterno) => {
+                const [githubUser, projectName] = linkInterno
+                  .replace('https://raw.githubusercontent.com/', '')
+                  .replace('/main/db.json', '')
+                  .split('/');
+
+                return (
+                  <li key={linkInterno}>
+                    <Widget.Topic
+                      as={Link}
+                      href={`/quizi/${githubUser}___${projectName}`}
                     >
                       {`${githubUser}/${projectName}`}
                     </Widget.Topic>

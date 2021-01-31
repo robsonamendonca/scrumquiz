@@ -60,10 +60,16 @@
       }                   
     ],
     "external": [
+      "https://aluraquiz-rpg.danielmalka.vercel.app/",
       "https://breaking-bad-quiz.eliasnepo.vercel.app/",
       "https://aluraquiz-css.omariosouto.vercel.app/",
       "https://aluraquiz-marvel.omariosouto.vercel.app/"
     ],
+    "internal": [
+      "https://raw.githubusercontent.com/gustavouchoa/dotnetquiz/main/db.json",
+      "https://raw.githubusercontent.com/andermsilva/quiz-ander/main/db.json",
+      "https://raw.githubusercontent.com/ThiagoDC1001/mastermindquiz/main/db.json"
+    ],    
     "theme": {
       "colors": {
         "primary": "#ba68c8",
