@@ -25,7 +25,7 @@ export default function QuizDaGaleraPage({ dbExterno }) {
 }
 
 export async function getServerSideProps(context) {
-  const [githubUser, projectName] = context.query.id.split('___');  
+  const [githubUser, projectName] = context.query.id.split('___');
   try {
     const dbExterno = await fetch(`https://www.hdev.com.br/apitext2json/v1/?url=https://raw.githubusercontent.com/${githubUser}/${projectName}/main/db.json`)
       .then((respostaDoServer) => {

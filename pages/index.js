@@ -41,12 +41,11 @@ const QuizContainer = styled.div`
 export default function Home() {
   const router = useRouter();
   const [name, setName] = React.useState('');
-
+  const isName = name.length > 0;
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
         <title>
-          AluraQuiz -
           {db.title}
         </title>
       </Head>
@@ -112,6 +111,7 @@ export default function Home() {
                     <Widget.Topic
                       as={Link}
                       href={`/quiz/${projectName}___${githubUser}`}
+                      style={{ opacity: isName ? 'unset' : 0.5, cursor: isName ? 'pointer' : 'not-allowed' }}
                     >
                       {`${githubUser}/${projectName}`}
                     </Widget.Topic>
@@ -146,6 +146,7 @@ export default function Home() {
                     <Widget.Topic
                       as={Link}
                       href={`/quizi/${githubUser}___${projectName}`}
+                      style={{ opacity: isName ? 'unset' : 0.5, cursor: isName ? 'pointer' : 'not-allowed' }}
                     >
                       {`${githubUser}/${projectName}`}
                     </Widget.Topic>
